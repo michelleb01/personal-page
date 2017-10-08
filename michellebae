@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Michelle's Webpage">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Michelle Bae">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<style>
+
+body{
+  margin:0;
+  padding:0;
+  color:#666;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+}
+
+ .thick-grey-border {
+    border-color: grey;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 150px;
+  }
+
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+	</style>
+
+	<title>Michelle's Website</title>
+
+	</head>
+	<body>
+	<h1>Michelle's Website</h1>
+
+
+<div class="topnav" id="myTopnav">
+        <a href="#introduction">Introduction</a>
+        <a href="#photoAlbum">Photo Album</a>
+        <a href="#contactMichelle">Contact Michelle</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+<h2>Introduction</h2>
+	<p> This is Michelle Bae, a graduate from The University of Hong Kong with a major in accounting and finance. Born in Korea, I moved to Singapore when I was two and spent eight years of my childhood. There, I attended a Korean kindergarten and started my primary school years in the Canadian International School. I came back to Korea and completed primary school in a Korean local school, and I graduated from middle and high school in Korea International School. And now it has been four years since I moved to Hong Kong, while I studied accounting and finance in The University of Hong Kong. Having lived in Singapore, Korea, and Hong Kong, areas with the most competitive and rigorous education systems, I have never stopped my passion for learning, and now I am about to start a new adventure in learning computer programming. I hope I take the lessons learnt throughout my life to heart, always be open to learn, and have continuous eagerness like that of a high school student studying for college exams to be a positive impact on our community and to better our world. I hope the coding skills that I will develop soon in particular will help my ideas come to life much more easily and I wish I can build a collaborative community myself to grow together and make a better future. </p>
+
+<h2>Photo Album</h2>
+	<div class="container-fluid">
+		<h3 class="text-primary text-center">Michelle's Food Album</h3>
+	<p> I love Mid-Autumn Festival food, both the Korean and the Chinese ones. I wasn't able to go visit my family during this year's holiday so I really miss the Korean holiday food. These are some of the food Koreans will eat during the Mid-Autumn Festival holiday.
+	</p>
+
+  <div class="row">
+  <div class="col-md-6">
+
+
+			   <img class="thick-grey-border" src="http://www.krcnr.cn/wh/whdt/201209/W020120930524729048812.jpg" alt="송편- Korean rice cake" style="width:128px;height:128px;>
+         
+  </div>
+  <div class="col-md-6">
+
+			  <img class="thick-grey-border" src="http://img.hidoc.co.kr/content_images/column_S1_img_03_20120927.jpg" alt="곶감- Dried persimmon" style="width:128px;height:128px;>
+</div>
+</div>
+
+ <div class="row">
+  <div class="col-md-6">
+   <img class="thick-grey-border" src="http://cfile2.uf.tistory.com/image/2654773F53E985CE1EBFB0" alt="모둠전-Korean pancakes" style="width:128px;height:128px;>
+</div>
+  <div class="col-md-6">
+   <img class="thick-grey-border" src="http://cfile5.uf.tistory.com/image/2373844455F68E09376A1C" alt="약밥- Korean steamed glutinous rice" style="width:128px;height:128px;>
+</div>
+</div>
+
+ <div class="row">
+  <div class="col-md-6">
+         <img class="thick-grey-border" src="http://cfile24.uf.tistory.com/image/2166FE455603D03F0C3382" alt="약과- Korean deep-fried wheat-based sweet pastry" style="width:128px;height:128px;>
+  </div>
+  <div class="col-md-6">
+       <img class="thick-grey-border" src="http://cfile1.uf.tistory.com/image/253E635057CF71CD088D59" alt="잡채- Korean stir-fried glass noodles" style="width:128px;height:128px;>
+  </div>
+  </div>
+
+
+
+  <h2>Contact Michelle</h2>
+ 
+    <div>
+      <form id="contactForm" novalidate="">
+        <div class="form-item">
+          <label for="“name”">Name</label>
+          <input id="name" type="text" placeholder="Name" required=""/>
+        </div>
+        <div class="form-item">
+          <label for="“email”">Email Address</label>
+          <input id="email" type="email" placeholder="Email Address" required=""/>
+        </div>
+        <div class="form-item">
+          <label for="“phone”">Phone Number</label>
+          <input id="phone" type="tel" placeholder="Phone Number" required=""/>
+        </div>
+        <div class="form-item">
+          <label for="“message”">Message</label>
+          <textarea id="message" rows="5" placeholder="Message" required=""></textarea>
+        </div><br/>
+        <button type="submit">Send</button>
+      </form>
+   
+        <p>Feel free to contact me anytime!</p>
+
+
+
+  <footer class="text-center">
+
+    <hr>
+
+    <p>Written and coded by <a href="https://www.linkedin.com/in/hyunjai-bae-9a4a31116/" target="_blank"> Michelle Bae </a>.</p>
+  </footer>  
+
+	</body>
+	</html>
+
+
