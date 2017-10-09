@@ -7,6 +7,10 @@
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Michelle Bae">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow,archive">
+  <script src="randomcolorchange.js"></script>
+  <base href="https://www.linkedin.com/in/hyunjai-bae-9a4a31116/">
+  <link rel="stylesheet" herf="styles.css/">
 
   <script>
   function myFunction() {
@@ -70,7 +74,10 @@ body{
 	<title>Michelle's Website</title>
 
 	</head>
-	<body>
+	<body onload="alert('Hello')" onunload="alert('Bye Bye')">
+
+  <noscript>Please Enable Javascript</noscript>
+
 	<h1>Michelle's Website</h1>
 
 
@@ -82,7 +89,11 @@ body{
       </div>
 
 <h2>Introduction</h2>
+<!-- The <p> will add 2 line breaks after the </p> and <br> adds one -->
 	<p> This is Michelle Bae, a graduate from The University of Hong Kong with a major in accounting and finance. Born in Korea, I moved to Singapore when I was two and spent eight years of my childhood. There, I attended a Korean kindergarten and started my primary school years in the Canadian International School. I came back to Korea and completed primary school in a Korean local school, and I graduated from middle and high school in Korea International School. And now it has been four years since I moved to Hong Kong, while I studied accounting and finance in The University of Hong Kong. Having lived in Singapore, Korea, and Hong Kong, areas with the most competitive and rigorous education systems, I have never stopped my passion for learning, and now I am about to start a new adventure in learning computer programming. I hope I take the lessons learnt throughout my life to heart, always be open to learn, and have continuous eagerness like that of a high school student studying for college exams to be a positive impact on our community and to better our world. I hope the coding skills that I will develop soon in particular will help my ideas come to life much more easily and I wish I can build a collaborative community myself to grow together and make a better future. </p>
+
+<!-- Draws a line -->
+  <hr>
 
 <h2>Photo Album</h2>
 	<div class="container-fluid">
@@ -121,6 +132,8 @@ body{
   </div>
   </div>
 
+<!-- Draws a line -->
+  <hr>
 
 
   <h2>Contact Michelle</h2>
